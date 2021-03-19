@@ -254,10 +254,18 @@
 
 
 @media screen and (max-width: 1280px){
+  .splide__pagination {
+    position: absolute;
+    z-index: 1;
+    bottom: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
   .splide__arrow {
     position: absolute;
     z-index: 2;
-    bottom: 14vh;
+    bottom: 15%;
     transform: translateY(-50%);
     width: 4em;
     height: 4em;
@@ -269,14 +277,17 @@
     padding: 0;
     opacity: 0.6;
     background: transparent; 
-  }  
-  .splide__arrow--prev {
-    left: 13em;
   }
-  .splide__arrow--prev svg {
-    transform: scaleX(-1);
+  .splide__arrow svg {
+    width: 3em;
+    height: 3em;
+  }
+
+  .splide__arrow--prev {
+    left: 4em;
   }
   .splide__arrow--next {
-    right: 13em;
+    right: 4em;
   }
+
 }

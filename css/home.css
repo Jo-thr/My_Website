@@ -564,11 +564,11 @@ label{
     /* HEADER */
     .logo__home{
         position: fixed;
-        z-index: 50;
+        z-index: 150;
         width: 30px;
         transition: transform 330ms ease-in-out;
         top: 5vh;
-        left: 6em;
+        left: 3em;
     }
     .logo__home:hover{
         position: fixed;

@@ -183,7 +183,7 @@
     .outer-menu {
         position: fixed;
         top: 6vh;
-        right: 5.5em;
+        right: 3.5em;
         z-index: 150;
     }
     .listing__project{

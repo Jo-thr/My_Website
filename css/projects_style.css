@@ -21,11 +21,11 @@
 }
 @font-face {
     font-family: "RADIKAL-LIGHT";
-    src: url("/POLICE/Radikal-Light.otf");
+    src: url("/police/Radikal-Light.otf");
 }
 @font-face {
     font-family: "RADIKAL-BLACK";
-    src: url("/POLICE/Radikal-Black.otf");
+    src: url("/police/Radikal-Black.otf");
 }
 
 body{
@@ -261,6 +261,16 @@ a {
         letter-spacing: 0rem;
         text-align: center;
     }
+    .title__project:hover{
+        font-family: "RADIKAL-BLACK";
+        color: var(--color-grey);
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        letter-spacing: 0rem;
+        text-align: center;
+        mix-blend-mode: luminosity;
+        cursor: pointer;
+    }
     .link__project{
         display: flex;
         align-items: center;
@@ -273,8 +283,8 @@ a {
     .url__project{
         padding: 6% 12%;
         margin-top: 10%;
-        margin-left: 68% ;
-        width: auto;
+        margin-left: 69%;
+        width: max-content;
         font-family: "RADIKAL-LIGHT";
         height: auto;
         border-radius: 20px;
@@ -287,4 +297,33 @@ a {
         mix-blend-mode: luminosity;
         cursor: pointer;
     }
+    .url__project:hover{
+        padding: 6% 12%;
+        margin-top: 10%;
+        margin-left: 69%;
+        width: max-content;
+        font-family: "RADIKAL-LIGHT";
+        height: auto;
+        border-radius: 20px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        background:  var(--color-grey);
+        mix-blend-mode: luminosity;
+        cursor: pointer;
+    }
+    .img__project__ipad{
+        width: 70%;
+        padding-bottom: 20px;
+        transition: transform .2s;
+    }
+    .img__project__ipad:hover{
+        width: 70%;
+        padding-bottom: 20px;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+ 
 }
