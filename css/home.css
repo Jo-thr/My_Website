@@ -1,0 +1,812 @@
+:root {
+    --color-black: #212121;
+    --color-grey: #555555;
+    --color-pink-letter: #f5e4dd;
+    --color-white: #ffffff;
+    --color-home: #f5ede9;
+    --color-red: #d03449;
+    --color-coolgrey: #949494;
+
+    --color-cool-grey: #f8f8f8;
+    --color-white: #ffffff;
+
+    --color-parisshopping: #F14248;
+    --color-one4you: #50E1C3;
+    --color-villagemap: #007b8a;
+    --color-maelys: #e3bf90;
+    --color-mailgo:#98bec1;
+    --color-wikipedia: #c4ddff;
+    --color-spa: #ffaf00;
+    --color-nba: #e9645b;
+    --color-weather: #f3c19c;
+}
+@font-face {
+    font-family: "RADIKAL-LIGHT";
+    src: url("/police/Radikal-Light.otf");
+}
+@font-face {
+    font-family: "RADIKAL-BLACK";
+    src: url("/police/Radikal-Black.otf");
+}
+@font-face {
+    font-family: "Nature";
+    src: url("/police/Nature_Beauty.ttf");
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  box-shadow: none;
+}
+body{
+    margin: 0px;
+    opacity: 1; 
+    transition: opacity .5s; 
+    font-family: "RADIKAL-LIGHT";
+    background-color: var(--color-home);
+    color: var(--color-black);
+}
+#cadriage{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: "RADIKAL-BLACK";
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    width: 100%;
+    letter-spacing: .3em;
+    margin: 10px 0px 30px 0px;
+    animation: fadeInRight 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+    opacity: 0;
+}
+h2{
+    font-family: "RADIKAL-BLACK";
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 4em;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    animation: fadeInRight 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+    opacity: 0;
+    padding-bottom: 30px;
+    border-bottom: solid 2px var(--color-red);
+}
+h4{
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 100;
+    width: 50%;
+    line-height: 1.6em;
+    animation: fadeInRight 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+    color:  var(--color-red);
+    opacity: 0;
+}
+h6{
+    margin: 0% 0% 4% 0%;
+    width: 120%;
+    color: var(--color-red);
+    font-size: .7em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-family: "RADIKAL-BLACK";
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+
+/* HOME */
+#home_container{
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-home);
+    overflow: hidden;
+}
+#container_left{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+#container_right{
+    right: 0px;
+    width: 45%;
+    padding-left: 5%;
+}
+.img_home{
+    position: relative;
+    z-index: 10;
+    height: 90vh;
+    width: auto;
+    animation: scaleMinToMax 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+    transform: scale(.9);
+}
+
+  
+/* ABOUT */
+#about_container{
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#about_container_left{
+    display: flex;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+#about_container_right{
+    display: flex;
+    right: 0px;
+    width: 50%;
+    justify-content: center;
+}
+.img_about{
+    position: absolute;
+    z-index: 10;
+    height: 90vh;
+    width: auto;
+    bottom: 0px;
+    animation: fadeInUp 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+.fond_carre_about{
+    position: absolute;
+    z-index: 3;
+    width: 45%;
+    height: 63vh;
+    background-color: var(--color-red);
+    bottom: 0px;
+    animation: fadeInUp 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.letter_about{
+    position: absolute;
+    z-index: 1;
+    color: var(--color-pink-letter);
+    font-size: 30em;
+    top: 15%;
+    margin-left: -30%;
+    animation: fadeInUp 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+    opacity: 0;
+    font-family: "Nature";
+    mix-blend-mode: darken;
+}
+
+.paragraph_about{
+    width: 70%;
+    text-align: justify;
+    font-family: "RADIKAL-LIGHT";
+    font-size: .8em;
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+  
+
+/* NAVBAR */
+
+#navbar {
+    position: fixed;
+    z-index: 120;
+    width: 100%;
+    letter-spacing: 0.5em;
+    font-size: .7em;
+    top: 4.5em;
+    text-transform: uppercase;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-left: -4%;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 3em;
+}
+
+
+/* FOOTER  */
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 60%;
+    height: 15vh;
+    background-color: var(--color-black);
+    color: var(--color-cool-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img__footer{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('/src/moi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenu__footer{
+    font-family: "RADIKAL-LIGHT";
+    height: auto;
+    color: var(--color-white);
+    width: 25%;
+    margin: 0% 5%;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    margin-right: 5%;
+}
+.line__footer{
+    width: 20%;
+    height: 2px;
+    background-color: var(--color-white);
+}
+.reseauxsociaux__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    margin-left: 8%;
+}
+.reseauxsociaux{
+    width: 45%;
+}
+
+
+
+/* LINK ANIMATION */
+
+.logo__full__home{
+    position: relative;
+    width: 90%;
+    margin-top: 10%;
+    transform: rotate(-10deg);
+    transition: transform 330ms ease-in-out;
+    z-index: 10;
+    animation: rotation 1.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.logo__full__home:hover{
+    width: 90%;
+    margin-top: 10%;
+    transform: scale(1.05)
+}
+
+.logo__home{
+    position: fixed;
+    z-index: 200;
+    width: 30px;
+    transition: transform 330ms ease-in-out;
+    top: 5vh;
+    left: 6em;
+}
+.logo__home:hover{
+    position: fixed;
+    transform: rotate(360deg);
+    cursor: pointer;
+    opacity: 0.8;
+    top: 5vh;
+    left: 6em;
+}
+.left{
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+    animation: opacityUp 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+.left:before {
+    content: "";
+    width: 0;
+    height: 0.1em;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background:  var(--color-grey);
+    opacity: 0.5;
+    mix-blend-mode: luminosity;
+    transition: all 0.3s;
+  }
+.left:hover:before {
+    width: 68%;
+    left: 14%;
+    background:  var(--color-red);
+    opacity: 0.5;
+  }
+.trait__home{
+    width: 45%;
+    height: 2px;
+    z-index: 1;
+    margin-left: -30%;
+    margin-top: -2vh;
+    background:  var(--color-red);
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.btn {
+    margin-left: 20%;
+    border: none;
+    padding: 15px 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+  }
+  .btn::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .btn.rounded {
+    border-radius: 50px;
+  }
+  .btn.rounded .text-cta {
+    color: var(--color-red);
+    font-family: "RADIKAL-BLACK";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+  .btn.rounded::before {
+    border-radius: 60px;
+    width: 19%;
+    background:  var(--color-red);
+    mix-blend-mode: multiply;
+  }
+  .btn.rounded:hover::before {
+    background:  var(--color-red);
+    width: 100%;
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+  }
+
+
+
+  @keyframes fadeInRight {
+    from {
+        transform: translate3d(-300px,0,0);
+        opacity:0;
+    }
+  
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+        transform: translate3d(0,100px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  @keyframes scaleMinToMax {
+    from {
+        transform: scale(.9);
+    }
+  
+    to {
+        transform: scale(1);
+    }
+  } 
+  @keyframes opacityUp {
+    from {
+        opacity:0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  } 
+  @keyframes rotation {
+    from {
+        transform: rotate(360deg);
+        opacity:0;
+    }
+  
+    to {
+        transform: rotate(-10deg);
+        opacity: 1;
+    }
+  }
+
+
+  /* SWUP TRANSITION */
+  .transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+
+
+  /* CONTACT FORM */
+input, textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px var(--color-coolgrey);
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: solid 1px var(--color-black);
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact_form{
+    width: 60%;
+}
+.title_contact{
+    position: relative;
+    width: 100%;
+    font-size: .8em;
+    letter-spacing: .1em;
+    font-family: "RADIKAL-BLACK";
+}
+
+
+.name_contact, .email_contact, .subject_contact, .message_contact{
+    position: relative;
+    width: 100%;
+    font-size: .8em;
+    letter-spacing: .1em;
+    color: var(--color-coolgrey);
+    padding: 10px 0px;
+    font-family: "RADIKAL-LIGHT";
+}
+.message_contact{
+    min-height: 100px;
+}
+
+.submit_contact{
+    width: 100%;
+    background-color: transparent;
+    border: solid 2px var(--color-red);
+    padding: 15px;
+    font-size: .8em;
+    font-family: "RADIKAL-LIGHT";
+    letter-spacing: .1em;
+}
+.submit_contact:hover{
+    width: 100%;
+    background-color: var(--color-red);
+    border: solid 2px var(--color-red);
+    padding: 15px;
+    font-size: .8em;
+    font-family: "RADIKAL-LIGHT";
+    letter-spacing: .1em;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+    /* HEADER */
+    .logo__home{
+        position: fixed;
+        z-index: 50;
+        width: 30px;
+        transition: transform 330ms ease-in-out;
+        top: 5vh;
+        left: 6em;
+    }
+    .logo__home:hover{
+        position: fixed;
+        transform: rotate(360deg);
+        cursor: pointer;
+        opacity: 0.8;
+        top: 5vh;
+        left: 6em;
+    }
+
+
+    /* FOOTER  */
+
+    footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 10vh;
+        background-color: var(--color-black);
+        color: var(--color-cool-grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .img__footer{
+        display: none;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background-image: url('/src/moi.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contenu__footer{
+        display: none;
+        font-family: "RADIKAL-LIGHT";
+        height: auto;
+        color: var(--color-white);
+        width: 25%;
+        margin: 0% 5%;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+        text-align: left;
+        margin-right: 5%;
+    }
+    .line__footer{
+        display: none;
+        width: 20%;
+        height: 2px;
+        background-color: var(--color-white);
+    }
+    .reseauxsociaux__footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+    }
+    .reseauxsociaux{
+        width: 25%;
+    }
+
+    /* NAVBAR */
+    #navbar {
+        position: fixed;
+        z-index: 120;
+        width: 100%;
+        letter-spacing: 0.5em;
+        font-size: .7em;
+        top: 1.5em;
+        text-transform: uppercase;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin-left: -8%;
+    }
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .4em 0;
+    }
+
+    /* HOME */
+    #home_container{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-home);
+        overflow: visible;
+        height: max-content;
+    }
+    #container_left{
+        width: 100%;
+        margin-top: 10vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #container_right{
+        right: 0px;
+        width: 100%;
+        padding-left: 0%;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    h1{
+        font-family: "RADIKAL-BLACK";
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        width: 100%;
+        letter-spacing: .3em;
+        margin: 10px 0px 30px 0px;
+        animation: fadeInRight 2s;
+        animation-fill-mode: forwards;
+        animation-delay: .6s;
+        opacity: 0;
+    }
+    h4{
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        font-weight: 100;
+        width: 80%;
+        margin-left: 10%;
+        line-height: 1em;
+        animation: fadeInRight 2s;
+        animation-fill-mode: forwards;
+        animation-delay: .8s;
+        color:  var(--color-red);
+        opacity: 0;
+    }
+    h6{
+        margin: 0% 0% 4% 0%;
+        width: 100%;
+        color: var(--color-red);
+        font-size: .7em;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        font-weight: 100;
+        text-align: center;
+        font-family: "RADIKAL-BLACK";
+        animation: opacityUp 1.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.5s;
+        opacity: 0;
+    }
+    .logo__full__home{
+        position: relative;
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10%;
+        transform: rotate(-10deg);
+        transition: transform 330ms ease-in-out;
+        z-index: 10;
+        animation: rotation 1.2s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    .logo__full__home:hover{
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 10%;
+        transform: scale(1.05)
+    }
+
+    /* ABOUT */
+    #about_container{
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #about_container_left{
+        display: flex;
+        width: 100%;
+        margin-top: 20vh;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    #about_container_right{
+        display: flex;
+        right: 0px;
+        width: 100%;
+        padding-bottom: 20vh;
+        justify-content: center;
+    }
+    .img_about{
+        display: none;
+        position: absolute;
+        z-index: 10;
+        height: 90vh;
+        width: auto;
+        bottom: 0px;
+        animation: fadeInUp 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .7s;
+        opacity: 0;
+    }
+    .fond_carre_about{
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 45%;
+        height: 63vh;
+        background-color: var(--color-red);
+        bottom: 0px;
+        animation: fadeInUp 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        opacity: 0;
+    }
+    .letter_about{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        color: var(--color-pink-letter);
+        font-size: 30em;
+        top: 15%;
+        margin-left: -30%;
+        animation: fadeInUp 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .8s;
+        opacity: 0;
+        font-family: "Nature";
+        mix-blend-mode: darken;
+    }
+
+
+  }

@@ -1,0 +1,290 @@
+:root {
+    --color-black: #212121;
+    --color-grey: #555555;
+    --color-pink-letter: #f5e4dd;
+    --color-white: #ffffff;
+    --color-home: #f5ede9;
+    --color-red: #d03449;
+
+    --color-cool-grey: #f8f8f8;
+    --color-white: #ffffff;
+
+    --color-parisshopping: #F14248;
+    --color-one4you: #50E1C3;
+    --color-villagemap: #007b8a;
+    --color-maelys: #e3bf90;
+    --color-mailgo:#98bec1;
+    --color-wikipedia: #c4ddff;
+    --color-spa: #ffaf00;
+    --color-nba: #e9645b;
+    --color-weather: #f3c19c;
+}
+@font-face {
+    font-family: "RADIKAL-LIGHT";
+    src: url("/POLICE/Radikal-Light.otf");
+}
+@font-face {
+    font-family: "RADIKAL-BLACK";
+    src: url("/POLICE/Radikal-Black.otf");
+}
+
+body{
+    margin: 0px;
+    opacity: 1; 
+    transition: opacity .5s; 
+}
+
+#cadriage{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.light:hover{
+    padding: 2% 4%;
+    margin: 2% 0% ;
+    width: auto;
+    font-family: "RADIKAL-LIGHT";
+    height: auto;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    white-space: nowrap;}
+
+
+/* SLIDER | PROJECTS */
+
+.focus__parisshopping{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-parisshopping);
+}
+.focus__one4you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-one4you);
+}
+.focus__villagemap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-villagemap);
+}
+.focus__maelys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-maelys);
+}
+.focus__wikipedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-wikipedia);
+}
+.focus__spa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-spa);
+}
+.focus__nba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-nba);
+}
+.focus__mailgo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-mailgo);
+}
+.focus__weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-weather);
+}
+
+.info__project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 80vh;
+    margin-left: 12%;
+    margin-right: 5%;
+    padding-bottom: 5vh;
+    top: 5%;
+}
+.subtitle__project{
+    font-family: "RADIKAL-LIGHT";
+    width: 70%;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+    text-align: left;
+}
+.title__project{
+    font-family: "RADIKAL-BLACK";
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1.3rem;
+    text-align: left;
+}
+.link__project{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+.line__project{
+    position: relative;
+    width: 30%;
+    height: 2px;
+    margin-right: 2%;
+    background-color: var(--color-white);
+}
+.url__project{
+    position: relative;
+    float: left;
+    padding: 6% 12%;
+    margin: 2% 0% ;
+    width: auto;
+    font-family: "RADIKAL-LIGHT";
+    height: auto;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    white-space: nowrap;
+}
+.img__project__ipad{
+    width: 80%;
+    padding-bottom: 8vh;
+    transition: transform .2s;
+}
+.title__project:hover{
+    font-family: "RADIKAL-BLACK";
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1.3rem;
+    text-align: left;
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+}
+.url__project:hover{
+    padding: 6% 12%;
+    margin: 2% 0% ;
+    width: auto;
+    font-family: "RADIKAL-LIGHT";
+    height: auto;
+    border-radius: 20px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    background:  var(--color-grey);
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+}
+.img__project__ipad:hover{
+    width: 80%;
+    padding-bottom: 8vh;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px){
+    .focus__parisshopping, .focus__one4you, .focus__villagemap, .focus__maelys, .focus__wikipedia, .focus__spa, .focus__mailgo, .focus__nba, .focus__weather{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+    .info__project{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        height: max-content;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20vh;
+    }
+    .subtitle__project{
+        font-family: "RADIKAL-LIGHT";
+        width: 80%;
+        line-height: 150%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.4rem;
+        text-align: center;
+    }
+    .title__project{
+        font-family: "RADIKAL-BLACK";
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        letter-spacing: 0rem;
+        text-align: center;
+    }
+    .link__project{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .line__project{
+        display: none;
+    }
+    .url__project{
+        padding: 6% 12%;
+        margin-top: 10%;
+        margin-left: 68% ;
+        width: auto;
+        font-family: "RADIKAL-LIGHT";
+        height: auto;
+        border-radius: 20px;
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        background:  var(--color-grey);
+        mix-blend-mode: luminosity;
+        cursor: pointer;
+    }
+}

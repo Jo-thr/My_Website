@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="/src/picto/favicon3.png"/>
+    <link rel="apple-touch-icon" href="/src/picto/favicon3.png"/>
+    <title>JONATHAN THR • CONTACT</title>
+
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/toggle.css">
+
+    <script defer src="/node_modules/swup/dist/swup.js"></script>
+    <script defer src="/js/swup_transition.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script defer src="/js/contact_form.js"></script>
+</head>
+
+
+<body>
+    
+    <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <div class="first__listing">
+                        <div class="listing__project">
+                            <img class="miniature__listing" src="src/img-projects/MINIATURES/PARIS-SHOPPING-MOCKUP.png">
+                            <div class="title__listing">PARIS SHOPPING</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing" src="src/img-projects/MINIATURES/ONE4YOU-MOCKUP.png">
+                            <div class="title__listing">ONE4YOU</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing" src="src/img-projects/MINIATURES/VILLAGEMAP-MOCKUP.png">
+                            <div class="title__listing">VILLAGE MAP</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing__ordi" src="src/img-projects/MINIATURES/MAELYS-MOCKUP.png">
+                            <div class="title__listing">MAËLYS PDL</div>
+                        </div>
+                    </div>
+                    <div class="second__listing">
+                        <div class="listing__project">
+                            <img class="miniature__listing__ordi" src="src/img-projects/MINIATURES/WEATHER-MOCKUP.png">
+                            <div class="title__listing">JO.WEATHER</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing__ordi" src="src/img-projects/MINIATURES/WIKI-MOCKUP.png">
+                            <div class="title__listing">WIKIPÉDIA</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing__ordi" src="src/img-projects/MINIATURES/SPA-MOCKUP.png">
+                            <div class="title__listing">LA SPA</div>
+                        </div>
+                        <div class="listing__project">
+                            <img class="miniature__listing__ordi" src="src/img-projects/MINIATURES/NBA-MOCKUP.png">
+                            <div class="title__listing">NBA PLAYERS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<header>
+    <nav id="navbar">
+        <ul>
+            <li><a class="logo" href="/index.html"><img class="logo__home" src="/src/picto/logo-jo.svg" width="40px"></a></li>
+            <li class="left"><a href="/about.html">ABOUT</a></li>
+            <li class="left"><a href="/skills.html">SKILLS</a></li>
+            <li class="left"><a href="/contact.html">Contact</li></a>
+        </ul>
+    </nav>
+</header>
+
+<main id="swup" class="transition-fade">
+    <div id="about_container">
+        <div id="about_container_left">
+            <h6>Et si ... ? Pourquoi pas !</h6>
+            <h2>Contact</h2>
+            <p class="paragraph_about">Partir d’une page blanche ou d’un cahier des charges de 100 pages. 
+                Évoluer dans le secteur du e-commerce, du tourisme, ou de l’industrie, en direction d’un site internet responsive 100% administrable ou d’un consumer magazine… </br>
+                Je peux vous accompagner sur tous les terrains.
+                Prendre le bon itinéraire et faire bonne route, pas de hasard, mais une méthodologie éprouvée.</br></br>
+                <b>Et si nous faisions un bout de chemin ensemble ?</b>
+            </p>
+        </div>
+
+        <div id="about_container_right">
+
+            <form action="https://formspree.io/f/meqpygjr" method="POST" class="contact_form">
+                <label>
+                    <div class="title_contact">NOM & PRÉNOM</div>
+                    <input type="text" name="name" class="name_contact"/>
+                </label>
+                <label>
+                    <div class="title_contact">E-MAIL</div>
+                    <input type="email" name="_replyto" name="email" class="email_contact"/>
+                </label>
+                <label>
+                    <div class="title_contact">SUJET</div>
+                    <input type="text" name="sujet" class="subject_contact"/>
+                </label>
+                <label>
+                    <div class="title_contact">MESSAGE</div>
+                    <textarea class="message_contact" name="message"></textarea>
+                </label>
+                <div class="statut_contact"></div>
+                <button type="submit" class="submit_contact" value="Send">ENVOYER LE MESSAGE</button>
+            </form>
+            
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="img__footer"></div>
+    <div class="contenu__footer">
+        <b>JONATHAN THR</b><br><br>
+        Et si on se prenait un moment pour discuter design ?
+    </div>
+    <div class="line__footer"></div>
+    <div class="reseauxsociaux__footer">
+        <a href="www.linkedin.com/in/jonathan-thuayre-374739b0" target="_blank"><img class="reseauxsociaux" src="src/picto/linkedin.png"></a>
+        <a href="https://github.com/Jo-thr" target="_blank"><img class="reseauxsociaux" src="src/picto/github.png" width="100%"></a>
+        <a href="https://www.instagram.com/jonathan.thr/" target="_blank"><img class="reseauxsociaux" src="src/picto/instagram.png" width="100%"/></a>
+    </div>
+</footer>
+
+
+</body>
+</html>
