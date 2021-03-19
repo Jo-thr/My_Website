@@ -7,11 +7,11 @@
 }
 @font-face {
     font-family: "RADIKAL-LIGHT";
-    src: url("/POLICE/Radikal-Light.otf");
+    src: url("/police/Radikal-Light.otf");
 }
 @font-face {
     font-family: "RADIKAL-BLACK";
-    src: url("/POLICE/Radikal-Black.otf");
+    src: url("/police/Radikal-Black.otf");
 }
 #cadriage{
     position: fixed;
@@ -287,4 +287,143 @@ header{
 
 
 
+@media screen and (max-width: 1280px){
+  .focus__weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    background-color: var(--color-weather);
+}
+header{
+  position: relative;
+  z-index: 98;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-warm);
+}
+#container__image{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+}
+.img__header{
+  position: relative;
+  width: 90%;
+  margin-top: -5%;
+  height: auto;
+  left: 0%;
+}
+#container__information{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+#image__project{
+  position: relative;
+  padding: 0px;
+  margin-left: 2%;
+  width: 96%;
+}
+.title__project{
+  font-family: "RADIKAL-BLACK";
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}
+.title__project:hover{
+    font-family: "RADIKAL-BLACK";
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.poste__project{
+  font-family: "RADIKAL-LIGHT";
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 180%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+  animation-duration: 0.85s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+.paragraphe__project{
+  font-family: "RADIKAL-LIGHT";
+  text-align: justify;
+  font-size: 0.7rem;
+  line-height: 180%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+  animation-duration: 0.65s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+.retour__project{
+  position: absolute;
+  display: flex;
+  top: .6vh;
+  margin-left: 30%;
+  z-index: 99;
+  font-family: "RADIKAL-LIGHT";
+  font-size: 0.3rem;
+  align-items: center;
+  cursor: pointer;
+}
+.btn.return .text-cta {
+  color: var(--color-grey);
+  font-family: "RADIKAL-LIGHT";
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  mix-blend-mode: difference;
+}
+.btn {
+  margin: 20px auto;
+  border: none;
+  padding: 15px 25px;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  animation: opacityUp 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.arrow__top{
+  position: fixed;
+  z-index: 1;
+  bottom: 16vh;
+  right: 5%;
+  width: 6%;
+}
+.arrow__top:hover{
+    position: fixed;
+    z-index: 1;
+    bottom: 16vh;
+    right: 5%;
+    width: 6%;
+    background-color: var(--color-cool-grey);
+    border-radius: 50%;
+    mix-blend-mode: exclusion;
+}
+
+}
 
