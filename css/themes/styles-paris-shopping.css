@@ -7,11 +7,11 @@
 }
 @font-face {
     font-family: "RADIKAL-LIGHT";
-    src: url("/POLICE/Radikal-Light.otf");
+    src: url("/police/Radikal-Light.otf");
 }
 @font-face {
     font-family: "RADIKAL-BLACK";
-    src: url("/POLICE/Radikal-Black.otf");
+    src: url("/police/Radikal-Black.otf");
 }
 #cadriage{
     position: fixed;
@@ -123,7 +123,7 @@ header{
     height: auto;
     padding: 5%;
 
-    animation-duration: 0.25s;
+    animation-duration: 0.45s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: fadeInRight;
@@ -144,6 +144,10 @@ header{
     line-height: 180%;
     letter-spacing: 0.1rem;
     margin-bottom: 20px;
+    animation-duration: 0.65s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
 }
 .align_website{
   display: flex;
@@ -156,6 +160,10 @@ header{
     line-height: 180%;
     letter-spacing: 0.1rem;
     margin-bottom: 20px;
+    animation-duration: 0.85s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
 }
 .mission__project{
     font-family: "RADIKAL-LIGHT";
@@ -180,6 +188,11 @@ header{
     padding: 15px 25px;
     position: relative;
     cursor: pointer;
+    background-color: transparent;
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
   }
   .btn::before {
     transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);

@@ -21,11 +21,11 @@
 }
 @font-face {
     font-family: "RADIKAL-LIGHT";
-    src: url("/POLICE/Radikal-Light.otf");
+    src: url("/police/Radikal-Light.otf");
 }
 @font-face {
     font-family: "RADIKAL-BLACK";
-    src: url("/POLICE/Radikal-Black.otf");
+    src: url("/police/Radikal-Black.otf");
 }
 
 body{
