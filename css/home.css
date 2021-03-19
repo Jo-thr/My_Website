@@ -525,7 +525,6 @@ label{
     font-family: "RADIKAL-BLACK";
 }
 
-
 .name_contact, .email_contact, .subject_contact, .message_contact{
     position: relative;
     width: 100%;
@@ -582,10 +581,9 @@ label{
 
 
     /* FOOTER  */
-
     footer{
-        position: fixed;
-        bottom: 0px;
+        position: relative;
+        margin-bottom: 0px;
         width: 100%;
         height: 10vh;
         background-color: var(--color-black);
@@ -593,7 +591,6 @@ label{
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
     .img__footer{
         display: none;
@@ -658,7 +655,7 @@ label{
 
     /* HOME */
     #home_container{
-        position: fixed;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -666,20 +663,23 @@ label{
         width: 100%;
         background-color: var(--color-home);
         overflow: visible;
-        height: max-content;
+        height: 90vh;
     }
     #container_left{
+        display: none;
         width: 100%;
         margin-top: 10vh;
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: auto;
+        padding-bottom: 5%;
     }
     #container_right{
-        right: 0px;
         width: 100%;
         padding-left: 0%;
-        margin-top: 5vh;
+        align-content: center;
+        justify-content: center;
         text-align: center;
     }
     h1{
@@ -694,6 +694,20 @@ label{
         animation-fill-mode: forwards;
         animation-delay: .6s;
         opacity: 0;
+    }
+    h2{
+        font-family: "RADIKAL-BLACK";
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+        animation: fadeInRight 2s;
+        animation-fill-mode: forwards;
+        animation-delay: .6s;
+        opacity: 0;
+        padding-bottom: 30px;
+        border-bottom: solid 2px var(--color-red);
     }
     h4{
         letter-spacing: .3em;
@@ -723,33 +737,17 @@ label{
         animation-delay: 2.5s;
         opacity: 0;
     }
-    .logo__full__home{
-        position: relative;
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10%;
-        transform: rotate(-10deg);
-        transition: transform 330ms ease-in-out;
-        z-index: 10;
-        animation: rotation 1.2s;
-        animation-fill-mode: forwards;
-        animation-delay: 0s;
-    }
-    .logo__full__home:hover{
-        width: 80%;
-        margin-left: 0%;
-        margin-top: 10%;
-        transform: scale(1.05)
-    }
 
     /* ABOUT */
     #about_container{
-        position: fixed;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-bottom: 5%;
+        height: auto;
     }
     #about_container_left{
         display: flex;
@@ -758,7 +756,7 @@ label{
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
     }
     #about_container_right{
         display: flex;
@@ -806,6 +804,18 @@ label{
         opacity: 0;
         font-family: "Nature";
         mix-blend-mode: darken;
+    }
+    .paragraph_about{
+        width: 80%;
+        text-align: justify;
+        font-family: "RADIKAL-LIGHT";
+        font-size: .7em;
+        animation: opacityUp 1.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+        margin-bottom: 50px;
+        line-height: 1.4em;
     }
 
 
