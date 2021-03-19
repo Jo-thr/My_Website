@@ -572,11 +572,13 @@ label{
     }
     .logo__home:hover{
         position: fixed;
+        z-index: 150;
+        width: 30px;
         transform: rotate(360deg);
         cursor: pointer;
         opacity: 0.8;
         top: 5vh;
-        left: 6em;
+        left: 3em;
     }
 
 

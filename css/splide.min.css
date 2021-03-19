@@ -262,31 +262,12 @@
     transform: translateX(-50%);
     padding: 0;
   }
-  .splide__arrow {
-    position: absolute;
-    z-index: 2;
-    bottom: 15%;
-    transform: translateY(-50%);
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 0;
-    opacity: 0.6;
-    background: transparent; 
-  }
-  .splide__arrow svg {
-    width: 3em;
-    height: 3em;
-  }
-
   .splide__arrow--prev {
+    display: none;
     left: 4em;
   }
   .splide__arrow--next {
+    display: none;
     right: 4em;
   }
 
