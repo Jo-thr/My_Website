@@ -107,9 +107,9 @@ header{
   overflow: hidden;
 }
 .img__header{
-  position: relative;
-  height: 70vh;
-  left: 50%;
+    position: relative;
+    height: 70vh;
+    left: 10%;
 }
 #container__information{
   display: flex;
