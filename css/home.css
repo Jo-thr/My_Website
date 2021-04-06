@@ -255,6 +255,17 @@ h6{
     animation-delay: .7s;
     opacity: 0;
 }
+.img_skill{
+    position: absolute;
+    z-index: 10;
+    height: 70vh;
+    width: auto;
+    bottom: 15vh;
+    animation: fadeInUp 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
 .fond_carre_about{
     position: absolute;
     z-index: 3;
@@ -840,6 +851,18 @@ label{
         height: 90vh;
         width: auto;
         bottom: 0px;
+        animation: fadeInUp 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .7s;
+        opacity: 0;
+    }
+    .img_skill{
+        display: none;
+        position: absolute;
+        z-index: 10;
+        height: 70vh;
+        width: auto;
+        bottom: 15vh;
         animation: fadeInUp 1s;
         animation-fill-mode: forwards;
         animation-delay: .7s;
