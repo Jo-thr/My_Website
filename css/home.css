@@ -386,11 +386,6 @@ footer{
     animation-fill-mode: forwards;
     animation-delay: 0s;
 }
-.logo__full__home:hover{
-    width: 90%;
-    margin-top: 10%;
-    transform: scale(1.05)
-}
 
 .logo__home{
     position: fixed;
@@ -436,10 +431,10 @@ footer{
     opacity: 0.5;
   }
 .trait__home{
-    width: 45%;
+    width: 48%;
     height: 2px;
     z-index: 1;
-    margin-left: -30%;
+    margin-left: -33%;
     margin-top: -2vh;
     background:  var(--color-red);
     animation: opacityUp 1.5s;
