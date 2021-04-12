@@ -3,7 +3,7 @@
     --color-grey: #555555;
     --color-warm:#f0f0f0;
 
-    --color-villagemap: #007b8a;
+    --color-maelys: #e3bf90;
 }
 @font-face {
     font-family: "RADIKAL-LIGHT";
@@ -31,12 +31,12 @@ a {
     text-decoration: none;
 }
 
-.focus__villagemap{
+.focus__maelys{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: var(--color-villagemap);
+    background-color: var(--color-maelys);
 }
 
 
@@ -212,16 +212,16 @@ align-content: center;
     font-size: 0.8rem;
     letter-spacing: 0.3rem;
     mix-blend-mode: multiply;
-    color: var(--color-villagemap);
+    color: var(--color-maelys);
   }
   .btn.rounded::before {
     border-radius: 60px;
     width: 20%;
     mix-blend-mode: multiply;
-    background: var(--color-villagemap);
+    background: var(--color-maelys);
   }
   .btn.rounded:hover::before {
-    background: var(--color-villagemap);
+    background: var(--color-maelys);
     width: 100%;
     mix-blend-mode: multiply;
   }
@@ -252,10 +252,10 @@ align-content: center;
   .btn.return::before {
     border-radius: 60px;
     width: 2%;
-    background: var(--color-villagemap);
+    background: var(--color-maelys);
   }
   .btn.return:hover::before {
-    background: var(--color-villagemap);
+    background: var(--color-maelys);
     width: 100%;
   }
 
@@ -272,7 +272,7 @@ align-content: center;
     line-height: 180%;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    border-bottom: solid 1px var(--color-villagemap);
+    border-bottom: solid 1px var(--color-maelys);
 }
 #image__project{
     position: relative;
@@ -296,144 +296,4 @@ align-content: center;
     background-color: var(--color-cool-grey);
     border-radius: 50%;
     mix-blend-mode: exclusion;
-}
-
-@media screen and (max-width: 1280px){
-  .focus__villagemap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 55vh;
-    background-color: var(--color-villagemap);
-}
-  header{
-    position: relative;
-    z-index: 98;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-warm);
-}
-  #container__image{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 40vh;
-}
-.img__header{
-  position: relative;
-  width: 90%;
-  margin-top: 10%;
-  height: auto;
-  left: 0%;
-}
-  #container__information{
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 5%;
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-name: fadeInRight;
-  }
-  #image__project{
-    position: relative;
-    padding: 0px;
-    margin-left: 2%;
-    width: 96%;
-  }
-  .title__project{
-    font-family: "RADIKAL-BLACK";
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    letter-spacing: 0rem;
-    text-align: center;
-  }
-  .title__project:hover{
-      font-family: "RADIKAL-BLACK";
-      color: var(--color-black);
-      text-transform: uppercase;
-      font-size: 2.2rem;
-  }
-  .poste__project{
-    font-family: "RADIKAL-LIGHT";
-    text-align: center;
-    font-size: 0.9rem;
-    line-height: 180%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 20px;
-    animation-duration: 0.85s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-name: fadeInRight;
-  }
-  .paragraphe__project{
-    font-family: "RADIKAL-LIGHT";
-    text-align: justify;
-    font-size: 0.7rem;
-    line-height: 180%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 20px;
-    animation-duration: 0.65s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-name: fadeInRight;
-  }
-  .retour__project{
-    position: absolute;
-    display: flex;
-    top: .6vh;
-    margin-left: 30%;
-    z-index: 99;
-    font-family: "RADIKAL-LIGHT";
-    font-size: 0.3rem;
-    align-items: center;
-    cursor: pointer;
-  }
-  .btn.return .text-cta {
-    color: var(--color-grey);
-    font-family: "RADIKAL-LIGHT";
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    letter-spacing: 0.1rem;
-    mix-blend-mode: difference;
-  }
-  .btn {
-    margin: 20px auto;
-    border: none;
-    padding: 15px 25px;
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
-    animation: opacityUp 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    opacity: 0;
-  }
-  .arrow__top{
-    position: fixed;
-    z-index: 1;
-    bottom: 16vh;
-    right: 5%;
-    width: 6%;
-}
-  .arrow__top:hover{
-      position: fixed;
-      z-index: 1;
-      bottom: 16vh;
-      right: 5%;
-      width: 6%;
-      background-color: var(--color-cool-grey);
-      border-radius: 50%;
-      mix-blend-mode: exclusion;
-  }
-
 }
