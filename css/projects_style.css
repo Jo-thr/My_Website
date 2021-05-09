@@ -13,6 +13,8 @@
     --color-one4you: #50E1C3;
     --color-villagemap: #007b8a;
     --color-maelys: #e3bf90;
+    --color-signin: #153131;
+    --color-potager: #839073;
     --color-mailgo:#98bec1;
     --color-wikipedia: #c4ddff;
     --color-spa: #ffaf00;
@@ -95,6 +97,20 @@ a {
     justify-content: center;
     height: 100vh;
     background-color: var(--color-wikipedia);
+}
+.focus__signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-signin);
+}
+.focus__potager{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-potager);
 }
 .focus__spa{
     display: flex;
